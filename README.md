@@ -21,7 +21,7 @@ The website demonstrates a solid understanding of frontend development fundament
 2. Open the `index.html` file in your preferred web browser.
 
 ## Live Demo
-You can view the live website here:  https://rehan-1009.github.io/my-first-website1/
+You can view the live website here: https://rehan-1009.github.io/Elite-Engineers/
 
 ## Author
 - Rehan Ansari
