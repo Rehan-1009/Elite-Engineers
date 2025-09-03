@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION | FREERESOURCE.COM</title>
+    <meta name="description" content="Register to get free access to engineering syllabus, previous year questions (PYQs), and reference books.">
+</head>
+<body>
+    <header><h2>STUDENT REGISTRATION PAGE</h2></header>
+    <main>
+        <form action="register-action" method="post">
+            <section>
+            <div id="basic-info">
+                <label for="studentname">Student Full Name:</label><br>
+                <input id="studentname" type="text" placeholder="STUDENT NAME" name="studentname" size="40" required><br><br>
+                <label for="email">Student Email:</label><br>
+                <input id="email" type="email" placeholder="ENTER YOUR EMAIL" name="email" size="40" required><br><br>
+                <label for="password">Set Your Password:</label><br>
+                <input id="password" type="password" placeholder="SET YOUR PASSWORD" name="password" size="20" required><br><br>
+                <label for="date-of-birth">Date Of Birth:</label><br>
+                <input id="date-of-birth" type="date" name="date-of-birth" required><br><br>
+                <label for="age">Age:</label>
+                <input id="age" type="number" placeholder="select your age" name="age" min="15" max="100" required><br><br>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </div>
+            </section>
+            <section>
+            <div id="academics">
+                <label for="collegename">Enter Your College Name:</label><br>
+                <input id="collegename" type="text" placeholder="College Name" name="collegename" size="40" required><br><br>
+                <label for="Enggyear">Engineering Year you are in:</label><br>
+                <select id="Enggyear" name="Enggyear" required>
+                <option value="">--Select Year--</option>
+                    <option value="First Year">First Year</option>
+                    <option value="Second Year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                    <option value="Final Year">Final Year</option>
+                </select><br><br>
+                <label for="subject">Select your subject:</label><br>
+                <select id="subject" name="subject" required>
+                <option value="">--Select Subject--</option>
+                    <option value="Computer Engineering">Computer Engineering </option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Computer Science (AI/ML)">Computer Science (AI/ML)</option>
+                    <option value="Computer Science (IOT/CYBER SECURITY)">Computer Science (IOT/CYBER SECURITY)</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering </option>
+                    <option value="Electrical Engineering">Electrical Engineering </option>
+                    <option value="Civil Engineering">Civil Engineering </option>
+                </select><br><br>
+             </div>
+             </section>
+                <input type="submit" value="Register"> <input type="reset" value="Clear form">
+        </form>
+            <p>
+              Already have an account? <a href="login.html">LOGIN HERE!</a>
+            Just want to view the resources? <a href="resources.html">Click here to continue!</a>
+            </p>
+
+            <footer>
+                <p>&copy; 2025 FreeResource.com | All Rights Reserved.</p>
+            </footer>        
+    </main>
+</body>
+</html>
