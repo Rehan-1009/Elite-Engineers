@@ -1,0 +1,240 @@
+/* Base Styles for All Pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4fffb0;
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #33cc88;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #f4f4f4;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover {
+    background-color: #e2e2e2;
+    color: #333;
+}
+
+/* Main Content & Form Styles */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4fffb0;
+    color: #333;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"]:hover,
+input[type="reset"] {
+    background-color: #33cc88;
+}
+
+p a {
+    color: #4fffb0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Star rating styles */
+.star-rating {
+    display: flex;
+    font-size: 2rem;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    display: block;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label,
+.star-rating input:hover ~ label {
+    color: gold;
+}
+
+/* Resources Page Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #4fffb0;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li a {
+    display: block;
+    background-color: #eaf4ff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    color: #4fffb0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+section ul li a:hover {
+    background-color: #d1e5f9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Size adjustments for "What We Provide" section */
+#what-we-provide p {
+    font-size: 1.3rem; /* Makes the text bigger */
+    opacity: 0; /* Ensures elements are hidden by default */
+}
+
+#what-we-provide p img {
+    width: 70px; /* Makes the images bigger */
+    height: auto;
+}
+
+/* The new class that will trigger the animation */
+.animate-visible p {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-visible p:nth-of-type(1) { animation-delay: 0.2s; }
+.animate-visible p:nth-of-type(2) { animation-delay: 0.7s; }
+.animate-visible p:nth-of-type(3) { animation-delay: 1.2s; }
